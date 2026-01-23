@@ -1,0 +1,1 @@
+export const WA_LINK = "https://wa.me/5522998019919?text=Olá,%20equipe%20do%20Dr.%20Barcellos.%20Gostaria%20de%20solicitar%20informações%20sobre%20agendamento%20de%20consultas.";
