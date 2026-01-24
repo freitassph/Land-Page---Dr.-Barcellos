@@ -81,7 +81,8 @@ const Hero: React.FC = () => {
         {/* Image Column - Artistic & Editorial (DESKTOP ONLY) */}
         <div className="hidden lg:flex lg:col-span-6 relative order-2 flex-col items-center lg:items-end h-full reveal-on-scroll" style={{ transitionDelay: '200ms' }}>
           
-          <div className="relative w-full max-w-[340px] md:max-w-md lg:max-w-xl aspect-[3.8/5] mt-8 lg:mt-0">
+          {/* Changed max-w-xl to max-w-[440px] to decrease size as requested */}
+          <div className="relative w-full max-w-[340px] md:max-w-md lg:max-w-[440px] aspect-[3.8/5] mt-8 lg:mt-0">
             
             {/* Abstract Elements behind image */}
             <div className="absolute top-10 -left-10 w-full h-full border border-med-sage/10 hidden lg:block z-0"></div>
