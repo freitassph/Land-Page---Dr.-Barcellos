@@ -1,10 +1,11 @@
+
 import React from 'react';
 import { ArrowDown } from 'lucide-react';
 import { WA_LINK } from '../utils/constants';
 
 const Hero: React.FC = () => {
   return (
-    <section id="inicio" className="relative min-h-screen flex items-center bg-med-offwhite pt-32 pb-12 lg:py-24 xl:py-0 overflow-x-hidden">
+    <section id="inicio" className="relative min-h-screen flex items-center bg-med-offwhite pt-32 pb-12 lg:pt-44 lg:pb-20 xl:pt-48 overflow-x-hidden">
       
       {/* Background Ambience */}
       <div className="absolute top-0 right-0 w-[60%] h-full bg-gradient-to-l from-white/60 to-transparent pointer-events-none" />
@@ -31,12 +32,11 @@ const Hero: React.FC = () => {
             </span>
           </h1>
 
-          {/* MOBILE ONLY IMAGE - Sandwich Layout Strategy */}
-          {/* CORREÇÃO: Aumento de margem superior (mt-8) e restrição de largura para evitar colisão com Header */}
-          <div className="block lg:hidden relative w-[85%] max-w-[280px] mx-auto aspect-[3.8/5] mb-12 reveal-on-scroll mt-8">
-             <div className="absolute -bottom-6 -right-4 w-32 h-32 bg-med-sage/20 rounded-full blur-2xl z-0"></div>
+          {/* MOBILE ONLY IMAGE - Sandwich Layout Strategy - RESIZED & CONSTRAINED */}
+          <div className="block lg:hidden relative w-full max-w-[260px] xs:max-w-[280px] sm:max-w-[320px] mx-auto aspect-[3.8/5] mt-4 mb-10 reveal-on-scroll">
+             <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-med-sage/20 rounded-full blur-2xl z-0"></div>
              
-             <div className="relative w-full h-full overflow-hidden shadow-elevation-2 z-10 border-[3px] border-white/50">
+             <div className="relative w-full h-full overflow-hidden shadow-elevation-2 z-10">
                <div className="absolute inset-0 bg-gradient-to-t from-med-navy/20 to-transparent opacity-60 z-20 mix-blend-multiply"></div>
                <img
                 src="https://i.ibb.co/HDHS4KbT/wmremove-transformed-1-co-pia.avif"
@@ -45,12 +45,13 @@ const Hero: React.FC = () => {
               />
              </div>
 
-             {/* Mobile Badge - Ajustado para não estourar a margem esquerda e inferior */}
-             <div className="absolute bottom-4 -left-2 bg-white p-4 shadow-elevation-2 z-30 border-t-[3px] border-med-sage/40 max-w-[180px]">
-               <p className="font-serif italic text-2xl text-med-navy leading-none mb-1">PhD</p>
-               <div className="text-[8px] uppercase tracking-widest text-med-stone leading-relaxed font-medium">
+             {/* Mobile Badge - Significantly Reduced Size for Proportion */}
+             <div className="absolute bottom-3 -left-2 xs:bottom-4 xs:-left-4 bg-white p-3 xs:p-4 shadow-elevation-2 z-30 border-t-[2px] border-med-sage/40 max-w-[140px] xs:max-w-[170px]">
+               <p className="font-serif italic text-xl xs:text-2xl text-med-navy leading-none mb-1 xs:mb-2">PhD</p>
+               <div className="text-[7px] xs:text-[8px] uppercase tracking-widest text-med-stone leading-relaxed font-medium">
                  <p>Referência em</p>
-                 <p>Neuropediatria</p>
+                 <p>Neuropediatria &</p>
+                 <p>Desenvolvimento</p>
                  <p className="mt-1 text-[7px] opacity-70">CRM-RJ 52.135959-2</p>
                </div>
              </div>
@@ -80,7 +81,8 @@ const Hero: React.FC = () => {
         {/* Image Column - Artistic & Editorial (DESKTOP ONLY) */}
         <div className="hidden lg:flex lg:col-span-6 relative order-2 flex-col items-center lg:items-end h-full reveal-on-scroll" style={{ transitionDelay: '200ms' }}>
           
-          <div className="relative w-full max-w-[340px] md:max-w-md lg:max-w-xl aspect-[3.8/5] mt-8 lg:mt-0">
+          {/* Added lg:mt-8 to provide extra safety breathing room from the header line */}
+          <div className="relative w-full max-w-[340px] md:max-w-md lg:max-w-xl aspect-[3.8/5] mt-8 lg:mt-8">
             
             {/* Abstract Elements behind image */}
             <div className="absolute top-10 -left-10 w-full h-full border border-med-sage/10 hidden lg:block z-0"></div>
@@ -104,7 +106,7 @@ const Hero: React.FC = () => {
               <p className="font-serif italic text-4xl text-med-navy leading-none mb-3">PhD</p>
               <div className="text-[10px] uppercase tracking-widest text-med-stone leading-relaxed font-medium">
                 <p>Referência em</p>
-                <p>Neuropediatria & Pesquisa</p>
+                <p>Neuropediatria & Desenvolvimento</p>
                 <p className="mt-1 text-[8px] opacity-70">CRM-RJ 52.135959-2</p>
               </div>
             </div>
