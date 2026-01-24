@@ -4,7 +4,7 @@ import { WA_LINK } from '../utils/constants';
 
 const Hero: React.FC = () => {
   return (
-    <section id="inicio" className="relative min-h-screen flex items-center bg-med-offwhite pt-24 pb-12 lg:py-24 xl:py-0 overflow-x-hidden">
+    <section id="inicio" className="relative min-h-screen flex items-center bg-med-offwhite pt-32 pb-12 lg:py-24 xl:py-0 overflow-x-hidden">
       
       {/* Background Ambience */}
       <div className="absolute top-0 right-0 w-[60%] h-full bg-gradient-to-l from-white/60 to-transparent pointer-events-none" />
@@ -32,8 +32,8 @@ const Hero: React.FC = () => {
           </h1>
 
           {/* MOBILE ONLY IMAGE - Sandwich Layout Strategy */}
-          {/* CORREÇÃO: Redução do max-w para 290px e ajuste de margens para evitar overflow visual */}
-          <div className="block lg:hidden relative w-[85%] max-w-[290px] mx-auto aspect-[3.8/5] mb-12 reveal-on-scroll mt-4">
+          {/* CORREÇÃO: Aumento de margem superior (mt-8) e restrição de largura para evitar colisão com Header */}
+          <div className="block lg:hidden relative w-[85%] max-w-[280px] mx-auto aspect-[3.8/5] mb-12 reveal-on-scroll mt-8">
              <div className="absolute -bottom-6 -right-4 w-32 h-32 bg-med-sage/20 rounded-full blur-2xl z-0"></div>
              
              <div className="relative w-full h-full overflow-hidden shadow-elevation-2 z-10 border-[3px] border-white/50">
@@ -45,7 +45,7 @@ const Hero: React.FC = () => {
               />
              </div>
 
-             {/* Mobile Badge - Ajustado para não estourar a margem esquerda */}
+             {/* Mobile Badge - Ajustado para não estourar a margem esquerda e inferior */}
              <div className="absolute bottom-4 -left-2 bg-white p-4 shadow-elevation-2 z-30 border-t-[3px] border-med-sage/40 max-w-[180px]">
                <p className="font-serif italic text-2xl text-med-navy leading-none mb-1">PhD</p>
                <div className="text-[8px] uppercase tracking-widest text-med-stone leading-relaxed font-medium">
