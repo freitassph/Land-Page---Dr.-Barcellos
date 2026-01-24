@@ -35,19 +35,19 @@ const Methodology: React.FC = () => {
         </div>
 
         {/* Minimalist List Layout */}
-        <div className="grid lg:grid-cols-3 gap-0 lg:divide-x divide-border-line border-t border-b border-border-line">
+        <div className="grid lg:grid-cols-3 gap-0 lg:divide-x divide-med-sage/10 border-t border-b border-med-sage/10">
           {steps.map((step, index) => (
             <div 
               key={index} 
               className="group relative p-8 lg:p-12 transition-all duration-700 hover:bg-white hover:shadow-elevation-1 reveal-on-scroll"
               style={{ transitionDelay: `${index * 150}ms` }}
             >
-              {/* Number */}
+              {/* Number - Changed from Navy to Sage for visual consistency */}
               <div className="mb-8 lg:mb-12 flex justify-between items-start">
-                <span className="font-serif text-4xl lg:text-5xl text-med-navy/10 group-hover:text-med-sage/40 transition-colors duration-500">
+                <span className="font-serif text-4xl lg:text-5xl text-med-sage/30 group-hover:text-med-sage transition-colors duration-500">
                   {step.num}
                 </span>
-                <div className="w-12 h-[1px] bg-med-navy/10 group-hover:w-20 group-hover:bg-med-sage transition-all duration-700"></div>
+                <div className="w-12 h-[1px] bg-med-sage/20 group-hover:w-20 group-hover:bg-med-sage transition-all duration-700"></div>
               </div>
               
               <h3 className="text-med-navy font-serif text-xl lg:text-2xl mb-4 lg:mb-6 group-hover:text-med-sage transition-colors duration-500">

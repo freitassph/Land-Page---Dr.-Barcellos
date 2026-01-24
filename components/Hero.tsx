@@ -26,16 +26,17 @@ const Hero: React.FC = () => {
             Clareza para <br />
             <span className="italic font-light text-med-sage relative inline-block">
               florescer.
-              {/* Subtle underline decoration */}
-              <span className="absolute bottom-2 left-0 w-full h-[2px] bg-med-sage/20 rounded-full"></span>
+              {/* Subtle underline decoration - increased opacity for balance */}
+              <span className="absolute bottom-2 left-0 w-full h-[3px] bg-med-sage/30 rounded-full"></span>
             </span>
           </h1>
 
           {/* MOBILE ONLY IMAGE - Sandwich Layout Strategy */}
-          <div className="block lg:hidden relative w-full max-w-[320px] mx-auto aspect-[3.8/5] mb-12 reveal-on-scroll">
-             <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-med-sage/10 rounded-full blur-2xl z-0"></div>
+          {/* CORREÇÃO: Redução do max-w para 290px e ajuste de margens para evitar overflow visual */}
+          <div className="block lg:hidden relative w-[85%] max-w-[290px] mx-auto aspect-[3.8/5] mb-12 reveal-on-scroll mt-4">
+             <div className="absolute -bottom-6 -right-4 w-32 h-32 bg-med-sage/20 rounded-full blur-2xl z-0"></div>
              
-             <div className="relative w-full h-full overflow-hidden shadow-elevation-2 z-10">
+             <div className="relative w-full h-full overflow-hidden shadow-elevation-2 z-10 border-[3px] border-white/50">
                <div className="absolute inset-0 bg-gradient-to-t from-med-navy/20 to-transparent opacity-60 z-20 mix-blend-multiply"></div>
                <img
                 src="https://i.ibb.co/HDHS4KbT/wmremove-transformed-1-co-pia.avif"
@@ -44,13 +45,13 @@ const Hero: React.FC = () => {
               />
              </div>
 
-             {/* Mobile Badge - Updated with CRM for Compliance */}
-             <div className="absolute bottom-6 -left-4 bg-white p-5 shadow-elevation-2 z-30 border-t-[3px] border-med-sage/20 max-w-[200px]">
-               <p className="font-serif italic text-3xl text-med-navy leading-none mb-2">PhD</p>
-               <div className="text-[9px] uppercase tracking-widest text-med-stone leading-relaxed font-medium">
+             {/* Mobile Badge - Ajustado para não estourar a margem esquerda */}
+             <div className="absolute bottom-4 -left-2 bg-white p-4 shadow-elevation-2 z-30 border-t-[3px] border-med-sage/40 max-w-[180px]">
+               <p className="font-serif italic text-2xl text-med-navy leading-none mb-1">PhD</p>
+               <div className="text-[8px] uppercase tracking-widest text-med-stone leading-relaxed font-medium">
                  <p>Referência em</p>
                  <p>Neuropediatria</p>
-                 <p className="mt-1 text-[8px] opacity-70">CRM-RJ 52.135959-2</p>
+                 <p className="mt-1 text-[7px] opacity-70">CRM-RJ 52.135959-2</p>
                </div>
              </div>
           </div>
@@ -82,8 +83,8 @@ const Hero: React.FC = () => {
           <div className="relative w-full max-w-[340px] md:max-w-md lg:max-w-xl aspect-[3.8/5] mt-8 lg:mt-0">
             
             {/* Abstract Elements behind image */}
-            <div className="absolute top-10 -left-10 w-full h-full border border-med-navy/5 hidden lg:block z-0"></div>
-            <div className="absolute -bottom-10 -right-10 w-40 h-40 bg-med-sage/5 rounded-full blur-3xl z-0"></div>
+            <div className="absolute top-10 -left-10 w-full h-full border border-med-sage/10 hidden lg:block z-0"></div>
+            <div className="absolute -bottom-10 -right-10 w-40 h-40 bg-med-sage/10 rounded-full blur-3xl z-0"></div>
             
             <div className="relative w-full h-full overflow-hidden z-10 shadow-elevation-2 group">
                {/* Image Overlay Gradient */}
@@ -99,7 +100,7 @@ const Hero: React.FC = () => {
             </div>
 
             {/* Floating Badge - Position Adjusted & CRM Added */}
-            <div className="absolute bottom-8 -left-6 lg:bottom-8 lg:-left-12 xl:bottom-12 xl:-left-20 bg-white p-8 shadow-elevation-2 z-30 min-w-[240px] border-t-[3px] border-med-sage/20">
+            <div className="absolute bottom-8 -left-6 lg:bottom-8 lg:-left-12 xl:bottom-12 xl:-left-20 bg-white p-8 shadow-elevation-2 z-30 min-w-[240px] border-t-[3px] border-med-sage/40">
               <p className="font-serif italic text-4xl text-med-navy leading-none mb-3">PhD</p>
               <div className="text-[10px] uppercase tracking-widest text-med-stone leading-relaxed font-medium">
                 <p>Referência em</p>

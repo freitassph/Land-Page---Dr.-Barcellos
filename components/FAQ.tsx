@@ -46,7 +46,12 @@ const FAQ: React.FC = () => {
 
         <div className="space-y-0 reveal-on-scroll" style={{ transitionDelay: '100ms' }}>
           {questions.map((item) => (
-            <div key={item.id} className="border-t border-border-line last:border-b">
+            <div 
+              key={item.id} 
+              className={`border-t transition-colors duration-500 last:border-b ${
+                selected === item.id ? 'border-med-sage/30' : 'border-border-line'
+              }`}
+            >
               <button
                 onClick={() => toggle(item.id)}
                 className="w-full py-8 flex justify-between items-center text-left group focus:outline-none"
