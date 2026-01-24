@@ -5,7 +5,7 @@ import { WA_LINK } from '../utils/constants';
 
 const Hero: React.FC = () => {
   return (
-    <section id="inicio" className="relative min-h-screen flex items-center bg-med-offwhite pt-32 pb-12 lg:pt-44 lg:pb-20 xl:pt-48 overflow-x-hidden">
+    <section id="inicio" className="relative min-h-screen flex items-center bg-med-offwhite pt-32 pb-12 lg:py-24 xl:py-0 overflow-x-hidden">
       
       {/* Background Ambience */}
       <div className="absolute top-0 right-0 w-[60%] h-full bg-gradient-to-l from-white/60 to-transparent pointer-events-none" />
@@ -81,8 +81,7 @@ const Hero: React.FC = () => {
         {/* Image Column - Artistic & Editorial (DESKTOP ONLY) */}
         <div className="hidden lg:flex lg:col-span-6 relative order-2 flex-col items-center lg:items-end h-full reveal-on-scroll" style={{ transitionDelay: '200ms' }}>
           
-          {/* Added lg:mt-8 to provide extra safety breathing room from the header line */}
-          <div className="relative w-full max-w-[340px] md:max-w-md lg:max-w-xl aspect-[3.8/5] mt-8 lg:mt-8">
+          <div className="relative w-full max-w-[340px] md:max-w-md lg:max-w-xl aspect-[3.8/5] mt-8 lg:mt-0">
             
             {/* Abstract Elements behind image */}
             <div className="absolute top-10 -left-10 w-full h-full border border-med-sage/10 hidden lg:block z-0"></div>
