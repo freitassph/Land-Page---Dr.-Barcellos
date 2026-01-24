@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Instagram } from 'lucide-react';
 import { WA_LINK } from '../utils/constants';
@@ -25,7 +26,7 @@ const Footer: React.FC = () => {
           {/* Brand */}
           <div className="space-y-6">
             <span className="font-serif italic text-2xl text-white">Dr. Barcellos</span>
-            <p className="text-slate-400 text-sm font-light leading-relaxed max-w-xs text-justify">
+            <p className="text-slate-400 text-sm font-light leading-relaxed max-w-xs text-left">
               Neuropediatria com rigor científico e olhar humano. Dedicado ao desenvolvimento pleno da infância.
             </p>
             <a
