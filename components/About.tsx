@@ -1,3 +1,4 @@
+
 import React from 'react';
 
 const About: React.FC = () => {
@@ -19,7 +20,7 @@ const About: React.FC = () => {
                 
                 <div className="relative w-full h-full overflow-hidden bg-med-sage/10 transition-all duration-1000 ease-luxury z-10">
                   <img
-                    src="https://i.ibb.co/pBN88wJr/wmremove-transformed-co-pia.avif"
+                    src="https://i.ibb.co/N6hp11NP/IMG-4413.avif"
                     alt="Dr. Warllon Barcellos - PhD"
                     className="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-[2s]"
                     loading="lazy"

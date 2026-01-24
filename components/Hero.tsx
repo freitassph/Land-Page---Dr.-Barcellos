@@ -39,7 +39,7 @@ const Hero: React.FC = () => {
              <div className="relative w-full h-full overflow-hidden shadow-elevation-2 z-10">
                <div className="absolute inset-0 bg-gradient-to-t from-med-navy/20 to-transparent opacity-60 z-20 mix-blend-multiply"></div>
                <img
-                src="https://i.ibb.co/HDHS4KbT/wmremove-transformed-1-co-pia.avif"
+                src="https://i.ibb.co/jkTDc4yS/IMG-4406.avif"
                 alt="Dr. Warllon Barcellos - Neuropediatra"
                 className="w-full h-full object-cover object-top animate-subtle-zoom will-change-transform"
               />
@@ -93,7 +93,7 @@ const Hero: React.FC = () => {
                <div className="absolute inset-0 bg-gradient-to-t from-med-navy/10 to-transparent opacity-60 z-20 mix-blend-multiply"></div>
                
                <img
-                src="https://i.ibb.co/HDHS4KbT/wmremove-transformed-1-co-pia.avif"
+                src="https://i.ibb.co/jkTDc4yS/IMG-4406.avif"
                 alt="Dr. Warllon Barcellos - Neuropediatra"
                 className="w-full h-full object-cover object-top opacity-100 animate-subtle-zoom will-change-transform"
                 width="800"
