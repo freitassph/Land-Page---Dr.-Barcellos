@@ -6,7 +6,6 @@ import Methodology from './components/Methodology';
 import CTA from './components/CTA';
 import FAQ from './components/FAQ';
 import Footer from './components/Footer';
-import FloatingElements from './components/FloatingElements';
 
 const App: React.FC = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -88,7 +87,6 @@ const App: React.FC = () => {
       </main>
 
       <Footer />
-      <FloatingElements />
     </div>
   );
 };

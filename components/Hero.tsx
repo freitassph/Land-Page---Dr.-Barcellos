@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { ArrowDown } from 'lucide-react';
 import { WA_LINK } from '../utils/constants';
@@ -26,13 +25,13 @@ const Hero: React.FC = () => {
           <h1 className="font-serif text-[3.2rem] sm:text-6xl lg:text-7xl xl:text-[6.5rem] text-med-navy leading-[1.05] tracking-tight mb-8 lg:mb-10 text-balance">
             Clareza para <br />
             <span className="italic font-light text-med-sage relative inline-block">
-              florescer.
-              {/* Subtle underline decoration - increased opacity for balance */}
+              acolher.
+              {/* Subtle underline decoration */}
               <span className="absolute bottom-2 left-0 w-full h-[3px] bg-med-sage/30 rounded-full"></span>
             </span>
           </h1>
 
-          {/* MOBILE ONLY IMAGE - Sandwich Layout Strategy - RESIZED & CONSTRAINED */}
+          {/* MOBILE ONLY IMAGE - Sandwich Layout Strategy */}
           <div className="block lg:hidden relative w-full max-w-[260px] xs:max-w-[280px] sm:max-w-[320px] mx-auto aspect-[3.8/5] mt-4 mb-10 reveal-on-scroll">
              <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-med-sage/20 rounded-full blur-2xl z-0"></div>
              
@@ -45,14 +44,12 @@ const Hero: React.FC = () => {
               />
              </div>
 
-             {/* Mobile Badge - Significantly Reduced Size for Proportion */}
+             {/* Mobile Badge - Updated Content */}
              <div className="absolute bottom-3 -left-2 xs:bottom-4 xs:-left-4 bg-white p-3 xs:p-4 shadow-elevation-2 z-30 border-t-[2px] border-med-sage/40 max-w-[140px] xs:max-w-[170px]">
-               <p className="font-serif italic text-xl xs:text-2xl text-med-navy leading-none mb-1 xs:mb-2">PhD</p>
+               <p className="font-serif italic text-xl xs:text-2xl text-med-navy leading-none mb-1">Doutor</p>
                <div className="text-[7px] xs:text-[8px] uppercase tracking-widest text-med-stone leading-relaxed font-medium">
-                 <p>Referência em</p>
-                 <p>Neuropediatria &</p>
-                 <p>Desenvolvimento</p>
-                 <p className="mt-1 text-[7px] opacity-70">CRM-RJ 52.135959-2</p>
+                 <p className="mb-1">Pela UENF</p>
+                 <p className="mt-1 pt-1 border-t border-med-navy/5 text-[6px] opacity-70">CRM-RJ 52.135959-2</p>
                </div>
              </div>
           </div>
@@ -81,7 +78,6 @@ const Hero: React.FC = () => {
         {/* Image Column - Artistic & Editorial (DESKTOP ONLY) */}
         <div className="hidden lg:flex lg:col-span-6 relative order-2 flex-col items-center lg:items-end h-full reveal-on-scroll" style={{ transitionDelay: '200ms' }}>
           
-          {/* Changed max-w-xl to max-w-[440px] to decrease size as requested */}
           <div className="relative w-full max-w-[340px] md:max-w-md lg:max-w-[440px] aspect-[3.8/5] mt-8 lg:mt-0">
             
             {/* Abstract Elements behind image */}
@@ -101,13 +97,12 @@ const Hero: React.FC = () => {
               />
             </div>
 
-            {/* Floating Badge - Position Adjusted & CRM Added */}
+            {/* Floating Badge - Updated Content */}
             <div className="absolute bottom-8 -left-6 lg:bottom-8 lg:-left-12 xl:bottom-12 xl:-left-20 bg-white p-8 shadow-elevation-2 z-30 min-w-[240px] border-t-[3px] border-med-sage/40">
-              <p className="font-serif italic text-4xl text-med-navy leading-none mb-3">PhD</p>
+              <p className="font-serif italic text-4xl text-med-navy leading-none mb-2">Doutor</p>
               <div className="text-[10px] uppercase tracking-widest text-med-stone leading-relaxed font-medium">
-                <p>Referência em</p>
-                <p>Neuropediatria & Desenvolvimento</p>
-                <p className="mt-1 text-[8px] opacity-70">CRM-RJ 52.135959-2</p>
+                <p className="mb-2">Pela UENF</p>
+                <p className="mt-2 pt-2 border-t border-med-navy/5 text-[8px] opacity-70">CRM-RJ 52.135959-2</p>
               </div>
             </div>
           </div>

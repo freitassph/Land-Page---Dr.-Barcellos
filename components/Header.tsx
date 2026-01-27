@@ -1,6 +1,6 @@
+
 import React, { useRef, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
-import { WA_LINK } from '../utils/constants';
 
 interface HeaderProps {
   scrolled: boolean;
@@ -111,12 +111,11 @@ const Header: React.FC<HeaderProps> = ({ scrolled, activeSection, mobileMenuOpen
 
           {/* CTA Button Desktop - Minimalist Outline */}
           <a
-             href={WA_LINK}
-             target="_blank"
-             rel="noopener noreferrer"
+             href="#agendamento"
+             onClick={(e) => handleNavClick(e, 'agendamento')}
              className="hidden lg:inline-block px-8 py-3 bg-med-navy text-white text-[10px] font-bold uppercase tracking-widest hover:bg-med-sage transition-colors duration-500"
           >
-            Contato
+            Agendar Consulta
           </a>
         </nav>
       </header>

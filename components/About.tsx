@@ -50,21 +50,21 @@ const About: React.FC = () => {
 
             <div className="space-y-6 text-slate-300 font-light text-base md:text-lg leading-relaxed text-justify max-w-2xl">
               <p>
-                A trajetória do <strong className="text-white font-medium">Dr. Warllon Barcellos</strong> é marcada pela incessante busca por respostas. Neuropediatra e pesquisador, ele compreende que por trás de cada comportamento existe um cérebro em desenvolvimento pedindo para ser entendido.
+                A trajetória do <strong className="text-white font-medium">Dr. Warllon Barcellos</strong> é marcada pela incessante busca por respostas. Médico e pesquisador, ele compreende que por trás de cada comportamento existe um cérebro em desenvolvimento pedindo para ser entendido.
               </p>
               <p>
-                Com Doutorado (PhD) pela UENF e vasta experiência acadêmica, ele traduz a complexidade da neurociência em caminhos práticos para as famílias. Seu consultório é um espaço onde a evidência científica encontra a sensibilidade humana.
+                Com Doutorado pela UENF e vasta experiência acadêmica, ele traduz a complexidade da neurociência em caminhos práticos para as famílias. Seu consultório é um espaço onde a evidência científica encontra a sensibilidade humana.
               </p>
             </div>
 
             {/* Credentials - Refined Grid */}
             <div className="mt-12 lg:mt-16 grid grid-cols-2 lg:grid-cols-4 gap-8 border-t border-white/5 pt-10">
               <div className="group">
-                <span className="block text-3xl font-serif text-white mb-2 group-hover:text-med-sage transition-colors">PhD</span>
-                <span className="text-[9px] text-slate-400 uppercase tracking-widest leading-relaxed">Doutor em Ciências<br/>(UENF)</span>
+                <span className="block text-3xl font-serif text-white mb-2 group-hover:text-med-sage transition-colors">Doutor</span>
+                <span className="text-[9px] text-slate-400 uppercase tracking-widest leading-relaxed">UENF</span>
               </div>
               <div className="group">
-                <span className="block text-3xl font-serif text-white mb-2 group-hover:text-med-sage transition-colors">Esp.</span>
+                <span className="block text-2xl font-serif text-white mb-2 group-hover:text-med-sage transition-colors">Pós-Graduado</span>
                 <span className="text-[9px] text-slate-400 uppercase tracking-widest leading-relaxed">Neuropediatria<br/>(IBCMED)</span>
               </div>
               <div className="group">
