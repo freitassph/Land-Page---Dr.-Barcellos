@@ -1,8 +1,18 @@
 import React from 'react';
 import { ArrowDown } from 'lucide-react';
-import { WA_LINK } from '../utils/constants';
 
 const Hero: React.FC = () => {
+  const handleScrollToBooking = (e: React.MouseEvent<HTMLAnchorElement>) => {
+    e.preventDefault();
+    const element = document.getElementById('agendamento');
+    if (element) {
+      const headerOffset = 80;
+      const elementPosition = element.getBoundingClientRect().top;
+      const offsetPosition = elementPosition + window.scrollY - headerOffset;
+      window.scrollTo({ top: offsetPosition, behavior: 'smooth' });
+    }
+  };
+
   return (
     <section id="inicio" className="relative min-h-screen flex items-center bg-med-offwhite pt-32 pb-12 lg:py-24 xl:py-0 overflow-x-hidden">
       
@@ -60,9 +70,8 @@ const Hero: React.FC = () => {
 
           <div className="flex flex-col sm:flex-row items-start sm:items-center gap-8">
             <a
-              href={WA_LINK}
-              target="_blank"
-              rel="noopener noreferrer"
+              href="#agendamento"
+              onClick={handleScrollToBooking}
               className="group relative px-10 py-5 bg-med-navy text-white text-[11px] uppercase tracking-widest font-semibold transition-all duration-700 hover:bg-med-sage hover:pr-12 overflow-hidden shadow-elevation-1 hover:shadow-elevation-2"
             >
               <span className="relative z-10">Agendar Consulta</span>
